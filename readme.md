@@ -45,3 +45,7 @@ A small look into one sample of a config settings stored as a json, we find belo
 #### Dataset
 The dataset we are using is dervived from the  DDSM database of 2,620 scanned film mammography studies. It contains normal, benign, and malignant cases with verified pathology information.
 To Download the dataset we used for our models, request testing and inference, Follow the [link](https://www.kaggle.com/datasets/awsaf49/cbis-ddsm-breast-cancer-image-dataset) and locate the data in the data folder.
+### Architecture
+We use and support several autoencoder models that we built on them through transfer learning due to the lack of the data to train from scratch. Note that the training is very optimized and that we do minimize the resources consumption/ the memory footprint and the ram used.
+<object data="Digraph.pdf" type="application/pdf" width="100%"> 
+</object>
