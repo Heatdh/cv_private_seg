@@ -10,7 +10,7 @@ To our [src](src) folder. For exact implementation details refer to:
 - [dataloader.py](src/dataloder.py) = dataloader class 
 - [model.py](src/model.py) = model architecture 
 - [train_cfgs.py](src/train_cfgs.py) = Top g, contains all the implementation of the training and quantization loop
-
+For a quick recap and visualization you can refer to our [notebook](Computer_Vision_advanced.ipynb) 
 A small look into one sample of a config settings stored as a json, we find below, where we use the keys and values to set our model parameters
 ```json
 {
