@@ -45,13 +45,11 @@
                         console.log(response);
                         isLoading = false;
                         done = true;
-                        result = { classification: Classification.BENIGN };
+                        result = { classification: response.classification };
                     })
                     .catch(error => {
                         console.error(error);
                         isLoading = false;
-                        done = true;
-                        result = { classification: Classification.BENIGN };
                     });
             };
         }
@@ -79,7 +77,7 @@
                         console.log(response);
                         isLoading = false;
                         done = true;
-                        result = { classification: Classification.BENIGN };
+                        result = { classification: response.classification };
                     })
                     .catch(error => {
                         console.error(error);
