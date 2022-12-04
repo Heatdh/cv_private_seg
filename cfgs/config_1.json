@@ -1,0 +1,32 @@
+{
+    "epochs": 20,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "optimizer": "adam",
+    "loss": "categorical_crossentropy",
+    "metrics": ["accuracy"],
+    "encoder": "resnet50",
+    "validation_split": 0.2,
+    "shuffle": true,
+    "verbose": 1,
+    "augmentation": true,
+    "callbacks": [
+        {
+            "class_name": "ModelCheckpoint",
+            "config": {
+                "filepath": "model.h5",
+                "monitor": "val_loss",
+                "save_best_only": true,
+                "save_weights_only": false,
+                "mode": "auto",
+                "save_freq": "epoch"
+            }
+        }
+    ],
+    "model_save_dir": "export_model",
+    "wandb": {
+        "project": "cancer_cv",
+        "entity": "heatdh",
+        "name": "config_1"
+    }
+}
