@@ -1,0 +1,8 @@
+elasticsearch
+flask~=2.2.2
+flask-jwt-extended
+cassandra-driver
+torch
+torchvision
+numpy
+pillow

@@ -1,0 +1,36 @@
+version: '3.8'
+services:
+  api:
+#    build: .
+    image: test1
+    container_name: api
+    depends_on:
+      - db
+    ports:
+      - 5000:5000
+    networks:
+      - db_cassandra
+
+  db:
+    container_name: cassandra-dev
+    image: cassandra
+    ports:
+      - 9042:9042
+
+    environment:
+      - CASSANDRA_START_RPC=true
+      - CASSANDRA_CLUSTER_NAME=MyCluster
+      - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+      - CASSANDRA_DC=datacenter
+    networks:
+      - db_cassandra
+
+volumes:
+  elasticsearch-data:
+    driver: local
+  kibana-data:
+    driver: local
+
+networks:
+    elastic_search:
+    db_cassandra:
