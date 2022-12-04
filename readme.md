@@ -1,4 +1,4 @@
-**Project structure and goals **
+**Project structure and goals**
 In our project, we combine different aspects of privacy, advanced computer vision, augmentation technique, deployment of self trained model on server and providing a frontend to interact with all components.
 
 ### Walkthrough the files
