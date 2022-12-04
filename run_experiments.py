@@ -71,7 +71,7 @@ if __name__ == '__main__':
             net_obj.optimizer_set()
             net_obj.loss_set()
             net_obj.train()
-            net_obj.quantize()
+            #net_obj.quantize()
 
         except Exception as e:
             print("Failed run with", e)
