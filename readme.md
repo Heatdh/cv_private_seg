@@ -1,6 +1,6 @@
-**Project structure and goals**
+## Project structure and goals
 In our project, we combine different aspects of privacy, advanced computer vision, augmentation technique, deployment of self trained model on server and providing a frontend to interact with all components.
-
+**keywords**: edge computing, AI for healthcare, Computer Vision, Annomaly detection
 ### Walkthrough the files
 #### Computer Vision and efficient edge training
 run_experiments: [run_experiments.py](run_experiments.py): 
